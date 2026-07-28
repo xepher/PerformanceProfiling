@@ -64,3 +64,5 @@ nunit-*.xml
 BenchmarkDotNet.Artifacts/
 **/BenchmarkDotNet.Artifacts/
 
+tools/
+**tools/

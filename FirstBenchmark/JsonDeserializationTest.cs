@@ -1,9 +1,13 @@
-﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Diagnosers;
+using BenchmarkDotNet.Diagnostics.Windows.Configs;
 using Newtonsoft.Json;
 using STJ = System.Text.Json;
 
 namespace FirstBenchmark;
 
+[EtwProfiler]
+[EventPipeProfiler(EventPipeProfile.CpuSampling)]
 public class JsonDeserializationTest
 {
     private readonly string _jsonString;
