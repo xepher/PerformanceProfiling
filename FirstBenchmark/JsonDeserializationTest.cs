@@ -6,7 +6,7 @@ using STJ = System.Text.Json;
 
 namespace FirstBenchmark;
 
-[EtwProfiler]
+//[EtwProfiler]
 [EventPipeProfiler(EventPipeProfile.CpuSampling)]
 public class JsonDeserializationTest
 {

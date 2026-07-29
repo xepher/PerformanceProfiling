@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
 using FirstBenchmark;
 
-BenchmarkRunner.Run<JsonDeserializationTest>();
+// use BenchmarkDotNet.TestAdapter package, we can run benchmark tests from Test Explorer in Visual Studio
+// BenchmarkRunner.Run<JsonDeserializationTest>();
